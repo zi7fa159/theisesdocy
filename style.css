@@ -1,0 +1,78 @@
+body {
+    font-family: sans-serif;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: #f4f4f4;
+}
+
+header {
+    background-color: #333;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+#toolbar {
+    padding: 1em;
+    background-color: #eee;
+    border-bottom: 1px solid #ccc;
+    text-align: center;
+}
+
+#toolbar button {
+    margin: 0.5em;
+    padding: 0.8em 1.2em;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#toolbar button:hover {
+    background-color: #0056b3;
+}
+
+#contentArea {
+    flex-grow: 1;
+    padding: 1.5em;
+    margin: 1em;
+    border: 1px solid #ccc;
+    background-color: white;
+    min-height: 300px; /* Ensure it's a decent size */
+    overflow-y: auto; /* Allow scrolling if content exceeds height */
+}
+
+#contentArea:focus {
+    outline: 2px solid #007bff;
+    border-color: #007bff;
+}
+
+/* Basic styling for elements within contentArea for better visual separation */
+#contentArea p {
+    margin-bottom: 1em;
+}
+
+#contentArea img {
+    max-width: 100%;
+    height: auto;
+    display: block; /* For centering or margin auto */
+    margin-top: 0.5em;
+    margin-bottom: 0.5em;
+    border: 1px solid #ddd; /* Optional border for images */
+}
+
+#contentArea ul, #contentArea ol {
+    margin-left: 2em;
+    margin-bottom: 1em;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 0.8em;
+    font-size: 0.9em;
+}

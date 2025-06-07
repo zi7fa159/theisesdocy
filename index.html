@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Academic Memo Pad</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Academic Memo Pad</h1>
+    </header>
+
+    <div id="toolbar">
+        <button id="addText">Add Text Block</button>
+        <button id="addImage">Add Image</button>
+        <button id="addList">Add List</button>
+        <hr>
+        <button id="exportDoc">Export to Word</button>
+    </div>
+
+    <main id="contentArea" contenteditable="true" aria-label="Memo content area">
+        <p>Start typing your memo here...</p>
+    </main>
+
+    <footer>
+        <p>Client-side HTML, CSS, JS Memo Tool</p>
+    </footer>
+
+    <!-- JavaScript files will be linked here later -->
+    <script src="FileSaver.min.js"></script>
+    <script src="html-docx.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
