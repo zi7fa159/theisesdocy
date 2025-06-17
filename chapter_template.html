@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chapter Title - Be Your Own Damn Boss</title> <!-- Will be dynamically updated -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="chapter-page"> <!-- Added id for page-specific JS -->
+    <header>
+        <h1 id="chapter-main-title">Chapter Title</h1> <!-- Dynamically updated by JS -->
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="chapters.html">Chapters</a>
+            <a href="progress.html">My Progress</a>
+            <a href="feedback.html">Feedback</a>
+        </nav>
+    </header>
+    <main>
+        <article id="chapter-content-article">
+            <!-- Chapter content (text, headings, bullet points) will be loaded here by JavaScript -->
+            <p>Loading chapter content...</p>
+        </article>
+        <section id="chapter-quiz-section">
+            <h2>Quiz</h2>
+            <div id="quiz-content-div">
+                <!-- Quiz questions will be loaded here by JavaScript -->
+                <p>Loading quiz...</p>
+            </div>
+            <button id="submit-quiz-button">Submit Quiz</button>
+            <div id="quiz-result-div">
+                <!-- Quiz results will be shown here by JavaScript -->
+            </div>
+        </section>
+        <div class="completion-action"> <!-- Added a wrapper for styling if needed -->
+            <button id="mark-complete-button">Mark as Complete</button>
+        </div>
+        <div id="navigation-buttons-div">
+            <button id="prev-chapter-button" class="hidden">&larr; Previous Chapter</button>
+            <button id="next-chapter-button" class="hidden">Next Chapter &rarr;</button>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Be Your Own Damn Boss</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
