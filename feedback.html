@@ -8,7 +8,7 @@
 </head>
 <body>
     <header>
-        <h1>Give Us Your Feedback</h1>
+        <h1>Submit Your Feedback</h1>
         <nav>
             <a href="index.html">Home</a>
             <a href="chapters.html">Chapters</a>
@@ -18,37 +18,27 @@
     </header>
     <main>
         <h2>We Value Your Feedback!</h2>
+        <p>We'd love to hear your thoughts, suggestions, or any questions you might have!</p>
         <form id="feedback-form">
             <div>
-                <label for="name">Name:</label>
-                <input type="text" id="name" name="name" required>
+                <label for="feedback-name">Name (Optional):</label>
+                <input type="text" id="feedback-name" name="name">
             </div>
             <div>
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
+                <label for="feedback-email">Email (Optional, if you'd like a response):</label>
+                <input type="email" id="feedback-email" name="email">
             </div>
             <div>
-                <label for="rating">Overall Rating (1-5):</label>
-                <select id="rating" name="rating" required>
-                    <option value="">--Select a rating--</option>
-                    <option value="5">5 - Excellent</option>
-                    <option value="4">4 - Very Good</option>
-                    <option value="3">3 - Good</option>
-                    <option value="2">2 - Fair</option>
-                    <option value="1">1 - Poor</option>
-                </select>
-            </div>
-            <div>
-                <label for="comments">Comments:</label>
-                <textarea id="comments" name="comments" rows="5" required></textarea>
+                <label for="feedback-message">Message:</label>
+                <textarea id="feedback-message" name="message" rows="5" required></textarea>
             </div>
             <button type="submit">Submit Feedback</button>
         </form>
-        <p id="feedback-confirmation" class="hidden">Thank you for your feedback!</p>
+        <p id="feedback-confirmation" class="hidden">Thank you! Your email client should open shortly for you to send your feedback.</p>
     </main>
     <footer>
         <p>&copy; 2024 Be Your Own Damn Boss</p>
     </footer>
-    <script src="script.js"></script>
+    <script src="script.js" defer></script>
 </body>
 </html>
